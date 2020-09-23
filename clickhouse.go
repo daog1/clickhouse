@@ -12,7 +12,8 @@ import (
 	"gorm.io/gorm/logger"
 	"gorm.io/gorm/migrator"
 	"gorm.io/gorm/schema"
-)
+	_ "github.com/ClickHouse/clickhouse-go"
+	)
 
 type Dialector struct {
 	*Config
